@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Space X flacon 9 success predicting </title>
+   <link rel="stylesheet" href="../static/predict1.css">
+</head>
+<body>
+       <form action="{{ url_for('submit') }}" method="POST" class="form-overlay">
+        <h1>SpaceX Falcon 9 First Stage Landing Success Predictor</h1>
+       <div class="data">
+         <div >
+            <label>Payload Mass</label>
+            <label class="le">Orbit</label><br>
+            <input type="text" name="PayloadMass" placeholder="Enter Payload Mass">
+            <select  class="bl"  name="orbit">
+                <option value="" disabled selected>Select Orbit</option>
+                <option value="GTO">GTO</option>
+                <option value="ISS">ISS</option>
+                <option value="VLEO">VLEO</option>
+                <option value="PO">PO</option>
+                <option value="LEO">LEO</option>
+                <option value="SSO">SSO</option>
+                <option value="MEO">MEO</option>
+                <option value="ES-L1">ES-L1</option>
+                <option value="HEO">HEO</option>
+                <option value="SO">SO</option>
+                <option value="GEO">GEO</option>
+            </select>
+        </div>
+        <div>
+           
+            <label>Launch Site</label>
+            <label class="left3">Longitude</label><br>
+            <select name="launch_site">
+                <option value="" disabled selected>Select Launch site</option>
+                <option value="CCAFS SLC 40">CCAFS SLC 40</option>
+                <option value="KSC LC 39A">KSC LC 39A</option>
+                <option value="VAFB SLC 4E">VAFB SLC 4E</option>
+            </select>
+            <select class="bl" name="longitude">
+                <option value="" disabled selected>Select Longitude</option>
+                <option value="-80.577366">-80.577366</option>
+                <option value="-80.603956">-80.603956</option>
+                <option value="-120.610829">-120.610829</option>
+            </select>
+        </div>
+        <div>   
+            <label>Latitude</label>
+            <label class="left2">GrindFins</label><br>
+            <select name="latitude">
+                <option value="" disabled selected>Select Latitude</option>
+                <option value="28.561857">28.561857</option>
+                <option value="28.608058">28.608058</option>
+                <option value="34.632093">34.632093</option>
+            </select>
+            <select class="bl" name="Grindfins">
+                <option value="" disabled selected>Select</option>
+                <option value="False">False</option>
+                <option value="True">True</option>
+            </select>
+        </div>
+        <div>
+            <label>Legs</label>
+            <label class="left1">Core Reused Count</label><br>
+            <select name="Legs">
+                <option value="" disabled selected>Select</option>
+                <option value="False">False</option>
+                <option value="True">True</option>
+            </select>
+            <input class="bl" type="text" name="Core_Reused_Count" placeholder="Core Reused Count">
+        </div>
+        <div>
+            <label>Core Block Version</label>
+            <label class="left">Flights With That Core</label><br>
+            <select name="core_block_version">
+                <option value="" disabled selected>Select Core Block Version</option>
+                <option value="5.0">5.0</option>
+                <option value="1.0">1.0</option>
+                <option value="3.0">3.0</option>
+                <option value="4.0">4.0</option>
+                <option value="2.0">2.0</option>
+            </select>
+            <input class="bl" type="text" name="Flights_With_That_Core" placeholder="Flights With That Core">
+        </div>
+       </div>
+       <button type="submit" value="predict">Launch</button>
+    </form>
+</body>
+</html>

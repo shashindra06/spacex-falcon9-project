@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0px;
+    font-family: sans-serif;
+    
+}
+
+body{
+    width:100%;
+    height:100vh;
+    background-image: url("elon1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:scroll;
+    
+}
+.box1{
+    
+    width:68%;
+    height: 60%;
+    border: 2px solid rgba(255, 255, 255, 0.327);
+    padding-top:30px ;
+    margin-top: 25px;
+     /* Semi-transparent background */
+    padding: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(172, 161, 161, 0.697);
+    backdrop-filter: blur(10px);
+}
+.box1 h3{
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+    text-decoration: solid;
+    position: relative;
+   
+}
+.a1{
+    animation: contentslide 5s ease forwards;
+    animation-delay:0.5s;
+    opacity: 0;
+}
+
+.a2{
+    animation: contentslide 5s ease forwards;
+    animation-delay:1.5s;
+    opacity: 0;
+}
+.a3{
+    animation: contentslide 5s ease forwards;
+    animation-delay:2.5s;
+    opacity: 0;
+}
+.a4{
+    animation: contentslide 5s ease forwards;
+    animation-delay:3.5s;
+    opacity: 0;
+}
+
+@keyframes contentslide{
+    from{opacity: 0;
+        right: px;
+    }
+    to{
+        right: 0px;
+        opacity: 1;
+    }
+
+    }
+.box1 p{
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+            
+        }
+        
+        .button1{
+            margin-top: 70px;
+            margin-left: 16%;
+            text-transform: uppercase;
+            
+
+            
+        }
+        .button1 a{
+            padding:8px;
+            background-color: green;
+            border-radius: 10px;
+            color: white;
+            text-transform: capitalize;
+            text-decoration: none;
+            border-style: none;
+            padding-left: 10px;
+            margin-left: 40px;
+            animation: contentslide2 2s ease forwards;
+    animation-delay:5s;
+    opacity: 0;
+            
+        }
+        @keyframes contentslide2{
+            from{opacity: 0;
+                bottom: px;
+            }
+            to{
+                bottom: 0px;
+                opacity: 10;
+            }
+        
+            }
+
+
+        
+       

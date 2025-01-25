@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    position: relative;
+    width:500px;
+    height:400px;
+    margin-top: 60px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.data{
+    justify-content: center;
+    align-items: center;
+    padding-left: 12%;
+    padding-top: 15px;
+    font-size: 20px;
+}
+li{
+    font-size: 25px;
+    font-weight: bold;
+}

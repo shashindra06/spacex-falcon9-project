@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+}
+body{
+    background-image: url(i1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+}
+body img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adjust as needed */
+}
+
+.form-overlay {
+    position: absolute;
+    top:320px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     /* Semi-transparent background */
+    padding: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(172, 161, 161, 0.463);
+    width: 50%;
+    backdrop-filter:blur(4px) ;
+}
+
+form h1 {
+    padding-top: 15px;
+    padding-left: 60px;
+    padding-right: 40px;
+    width: 100%;
+    color: white;
+    
+}
+
+#PayloadMass {
+    width: 100%;
+}
+
+form div {
+    padding: 8px;
+}
+
+form label {
+    padding-right: 60px;
+    color:white
+}
+form input {
+    padding-right: 60px;
+    padding-right: 50px;
+}
+
+#orbit {
+    padding-right: 140px;
+}
+
+.options {
+    padding-right: 140px;
+}
+
+input {
+    box-shadow: 
+        inset 0 0 5px white, /* Inset white shadow */
+        inset 0 0 10px black; /* Inset black shadow */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+select {
+    box-shadow: 
+        inset 0 0 5px white, /* Inset white shadow */
+        inset 0 0 10px black; /* Inset black shadow */
+    padding: 10px;
+    border: 1px solid #ccc;
+    width:40%;
+}
+#two{
+    margin-left: 30px;
+}
+#one{
+    margin-left: 120px;
+}
+#Core_reused_Count{
+ width:100%;
+}
+a {
+    background-color:rgba(16, 17, 16, 0.873); /* Dark gray background color */
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 0; /* No border radius */
+    cursor: pointer;
+    width: 40%; /* Button spans full width */
+    justify-content: center;
+    align-items: center;
+    margin-left: 24%;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 15%;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgba(9, 0, 128, 0.801);
+}
+#result {
+    margin-top: 20px;
+    margin-left: 40%;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+label{
+    font-size: 18px;
+    font-weight: 5450;
+}
+.left{
+    padding-left: 65px;
+}
+.left1{
+    padding-left:30%;
+}
+.left2{
+    padding-left:26%;
+}
+.left3{
+    padding-left: 21%;
+}
+.le{
+    padding-left: 19%;
+}
+.bl{
+    margin-left:40px;
+}
+button{
+    margin-left:45%;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color:green;
+}
